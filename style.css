@@ -360,6 +360,7 @@ padding: 1em;}
     .nav-container >.menu{
         margin-left: 0;
         padding-left: 0;
+        display: none;
     }
 
     .menu li {
@@ -372,7 +373,7 @@ padding: 1em;}
     }
 
     input[type=checkbox]:checked~.nav-container >.menu{
-        display: none;
+        display: block;
     }
 
 
