@@ -227,7 +227,7 @@ article:hover h1 {
 
 .social_section_part h1 {
     color: white;
-    padding:1.5em 0 1.5em;
+    padding: 1.5em 0 1.5em;
 }
 
 .social_links {
@@ -237,7 +237,7 @@ article:hover h1 {
     height: 300px;
     gap: 5em; */
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 
@@ -327,29 +327,34 @@ footer {
 /*-------------------------------------------------- Mobile Responsive Started from Her ---------------------------------- */
 
 @media screen and (max-width:576px) {
-/* common style for responsive 
+
+    /* common style for responsive 
  */
- section {
-    width: 100%;
-}
-.half_width{width: 100%;
-padding: 1em;}
+    section {
+        width: 100%;
+    }
+
+    .half_width {
+        width: 100%;
+        padding: 1em;
+    }
 
     /* /Responsive Navbar */
-  
+
     .nav-container {
         align-items: flex-start;
         justify-content: flex-end;
         position: relative;
         margin-left: 30px;
         top: -70px;
+        margin-bottom: -4rem;
     }
 
     .menu>ul {
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
-       
+
     }
 
     .nav-container ul {
@@ -357,7 +362,8 @@ padding: 1em;}
         padding: 10px;
         flex-basis: 20px;
     }
-    .nav-container >.menu{
+
+    .nav-container>.menu {
         margin-left: 0;
         padding-left: 0;
         display: none;
@@ -368,11 +374,16 @@ padding: 1em;}
 
     }
 
+    .menu a {
+        font-size: .6rem;
+        font-weight: 400;
+    }
+
     .hamburger {
         display: block;
     }
 
-    input[type=checkbox]:checked~.nav-container >.menu{
+    input[type=checkbox]:checked~.nav-container>.menu {
         display: block;
     }
 
@@ -386,30 +397,30 @@ padding: 1em;}
 
     .top_banner h1 {
         font-size: 34px;
-        margin-bottom: 27px;
-        line-height: 50px;
+        margin-bottom: 0px;
+        line-height: 48px;
     }
 
     .top_img {
         width: 80%;
-        padding: 3rem;
+        padding: 2rem;
     }
 
 
-/* Responsive for Main Part --------------------------------------------------------------------------------- */
-.main-container{
-    grid-template-columns: auto;
-}
+    /* Responsive for Main Part --------------------------------------------------------------------------------- */
+    .main-container {
+        grid-template-columns: auto;
+    }
 
 
-/* Article part------------------------------------- */
-.article_container{
-    grid-template-columns: auto;
-}
+    /* Article part------------------------------------- */
+    .article_container {
+        grid-template-columns: auto;
+    }
 
-/* Social Conncection Part -------------------------------------------------------- */
+    /* Social Conncection Part -------------------------------------------------------- */
 
-.social_links{
-    flex-direction: column;
-}
+    .social_links {
+        flex-direction: column;
+    }
 }
